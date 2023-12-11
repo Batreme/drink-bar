@@ -1,4 +1,4 @@
-In the project directory, you can run:
+A simple app that shows possible drinks that can be prepared from ingredients selected by the user.
 
 ### `npm start`
 
