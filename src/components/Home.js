@@ -2,6 +2,7 @@ import React from 'react';
 import { DisplayListOfDrinks } from './DisplayListOfDrinks';
 import { SearchBarElement } from './SearchBarElement';
 import initialCocktailArr from './data';
+import { ListOfIngredients } from './ListOfIngredients';
 
 function Home() {
     const { data: initialCocktailData } = initialCocktailArr;
@@ -32,11 +33,12 @@ function Home() {
 
   return (
     <div className='SearchBoxElement'>
-      <header className="SearchBoxElementBox">
-
-        <SearchBarElement inputValues={inputValues} onItemClick={handleItemClick} />
+        <div className='SearchBoxElementBox'>
+          <div className='mainListBox'>
+        <ListOfIngredients inputValues={inputValues} onItemClick={handleItemClick} />
+          </div>
         <DisplayListOfDrinks inputValues={inputValues} onItemClick={handleItemClick}/>
-      </header>
+        </div>
     </div>
   );
 }

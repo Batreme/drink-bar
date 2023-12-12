@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function DisplayListOfDrinks({ inputValues, onItemClick }) {
+export function DisplayListOfDrinks({ inputValues }) {
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const handleItemClick = (index) => {
@@ -31,11 +31,11 @@ export function DisplayListOfDrinks({ inputValues, onItemClick }) {
                                         {value.ingredients.fruits.length > 0 && (
                                             <li>Fruits: {value.ingredients.fruits.join(', ')}</li>
                                         )}
-                                        {value.ingredients.Alcohol.length > 0 && (
-                                            <li>Alcohol: {value.ingredients.Alcohol.join(', ')}</li>
+                                        {value.ingredients.alcohol.length > 0 && (
+                                            <li>Alcohol: {value.ingredients.alcohol.join(', ')}</li>
                                         )}
-                                        {value.ingredients.Juice.length > 0 && (
-                                            <li>Juice: {value.ingredients.Juice.join(', ')}</li>
+                                        {value.ingredients.beverages.length > 0 && (
+                                            <li>Juice: {value.ingredients.beverages.join(', ')}</li>
                                         )}
                                     </ul>
                                     {value.steps.length > 0 && (
