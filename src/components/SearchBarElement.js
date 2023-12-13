@@ -1,10 +1,9 @@
 import React from 'react';
 
-export function SearchBarElement({ inputValues, onItemClick }) {
+export function SearchBarElement({ inputValues }) {
     const [searchItem, setSearchItem] = React.useState('');
     const [filteredItems, setFilteredItems] = React.useState([]);
     const [activeIngredients, setActiveIngredients] = React.useState([]);
-    const [allIngredientsList, setallIngredientsList] = React.useState([]);
     
 
 
